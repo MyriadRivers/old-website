@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/static/js/main.37331906.js",
+    "static/media/SynchroAudioInterface_Good.mov": "/static/media/SynchroAudioInterface_Good.c015e3a20f81df073ce0.mov",
+    "static/media/voicemail.wav": "/static/media/voicemail.db09813fb69d20e3d532.wav",
+    "static/media/MusicEditor.mov": "/static/media/MusicEditor.9fe4578c2f33cb30cbaf.mov",
+    "static/media/splash.mp3": "/static/media/splash.deebc73b4ea1e92c70ca.mp3",
+    "static/media/AsketNarrowLight.svg": "/static/media/AsketNarrowLight.16b9ec78224df40d0096398885290d49.svg",
+    "static/media/brick_diffuse.jpg": "/static/media/brick_diffuse.85814aff9fb7cb82fe6b.jpg",
+    "static/media/sync_or_sink.png": "/static/media/sync_or_sink.f5a5d2d7ba8a79bd7b2c.png",
+    "static/media/AsketNarrowLight.eot": "/static/media/AsketNarrowLight.341d97bfb4c363880372.eot",
+    "static/media/AsketNarrowLight.ttf": "/static/media/AsketNarrowLight.16beeeeaa6d853a7441e.ttf",
+    "static/media/AsketNarrowLight.otf": "/static/media/AsketNarrowLight.fd20143bc811dc6055db.otf",
+    "static/media/orb_weaver.png": "/static/media/orb_weaver.3eb5dc42dd063ca5e056.png",
+    "static/media/dance_editor.png": "/static/media/dance_editor.dd53dafef8a3f86f3a33.png",
+    "static/media/AsketNarrowLight.woff": "/static/media/AsketNarrowLight.d6dcc79db885b4be693b.woff",
+    "static/media/water.jpg": "/static/media/water.092e79d14e8d98a7b9b9.jpg",
+    "static/media/auditory_interface.png": "/static/media/auditory_interface.385f8ecc0a6a1f618e71.png",
+    "index.html": "/index.html",
+    "main.37331906.js.map": "/static/js/main.37331906.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.37331906.js"
+  ]
+}
