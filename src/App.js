@@ -9,7 +9,7 @@ import { StyledRiver } from './components/styles/River.styled';
 import Header from './components/Header'
 import NavBar from './components/NavBar';
 
-import  {
+import {
   BrowserRouter as Router,
   Routes,
   Route,
@@ -38,12 +38,10 @@ import OrbWeaver from './pages/projects/music/OrbWeaver';
 function App() {
   const rootNavItems = ["about", "projects", "contact"]
   const rootRoutes = ["/", "projects", "contact"]
-  const projectNavItems = ["code", "music"]
-  const projectRoutes = ["projects/code", "projects/music"]
-  const codeNavItems = ["music editor", "dance editor", "ray tracer", "shaders", "auditory interface"]
-  const codeRoutes = ["projects/code/music_editor", "projects/code/dance_editor", "projects/code/ray_tracer", "projects/code/shaders", "projects/code/auditory_interface"]
-  const musicNavItems = ["orb weaver", "voicemail", "nyan cat - remix", "vocaloid simulation", "sync or sink"]
-  const musicRoutes = ["projects/music/orb_weaver", "projects/music/voicemail", "projects/music/nyan_cat_remix", "projects/music/vocaloid_simulation", "projects/music/sync_or_sink"]
+  const projectNavItems = ["orb weaver", "music editor", "dance editor", "ray tracer", "sync or sink", "auditory interface", "shaders",
+    "vocaloid simulation", "voicemail", "nyan cat - remix"]
+  const projectRoutes = ["projects/orb_weaver", "projects/music_editor", "projects/dance_editor", "projects/ray_tracer", "projects/sync_or_sink",
+    "projects/auditory_interface", "projects/shaders", "projects/vocaloid_simulation", "projects/voicemail", "projects/nyan_cat_remix"]
 
   const [route, setRoute] = useState("/")
 
@@ -56,38 +54,34 @@ function App() {
         <Router>
           {/* <MenuBar /> */}
           <NavBarContainer>
-            <NavBar items={rootNavItems} routes={rootRoutes} setRoute={setRoute}/>
-            <StyledRiver backgroundColor={theme.colors.river2}/>
-            <StyledRiver backgroundColor={theme.colors.river}/>
-            {window.location.pathname.match(/^\/projects/) && <NavBar items={projectNavItems} routes={projectRoutes} setRoute={setRoute}/>}
-            <StyledRiver backgroundColor={theme.colors.river2}/>
-            <StyledRiver backgroundColor={theme.colors.river}/>
-            {window.location.pathname.match(/^\/projects\/code/) && <NavBar items={codeNavItems} routes={codeRoutes} setRoute={setRoute}/>}
-            {window.location.pathname.match(/^\/projects\/music/) && <NavBar items={musicNavItems} routes={musicRoutes} setRoute={setRoute}/>}
-            <StyledRiver backgroundColor={theme.colors.river2}/>
-            <StyledRiver backgroundColor={theme.colors.river}/>
+            <NavBar items={rootNavItems} routes={rootRoutes} setRoute={setRoute} />
+            <StyledRiver backgroundColor={theme.colors.river2} />
+            <StyledRiver backgroundColor={theme.colors.river} />
+            {window.location.pathname.match(/^\/projects/) && <NavBar items={projectNavItems} routes={projectRoutes} setRoute={setRoute} />}
+            <StyledRiver backgroundColor={theme.colors.river2} />
+            <StyledRiver backgroundColor={theme.colors.river} />
+            {/* {window.location.pathname.match(/^\/projects\/code/) && <NavBar items={codeNavItems} routes={codeRoutes} setRoute={setRoute} />}
+            {window.location.pathname.match(/^\/projects\/music/) && <NavBar items={musicNavItems} routes={musicRoutes} setRoute={setRoute} />} */}
+            <StyledRiver backgroundColor={theme.colors.river2} />
+            <StyledRiver backgroundColor={theme.colors.river} />
           </NavBarContainer>
           <div className="content">
-            <Header text={'JASON GAO'}/>
+            <Header text={'JASON GAO'} />
             <div className="pageContainer">
               <PageContainer>
                 <Routes>
                   <Route path="/" element={<About />} />
                   <Route path="projects" element={<Projects />}>
-                    <Route path="code" element={<Code />} >
-                      <Route path="music_editor" element={<MusicEditor />} />
-                      <Route path="dance_editor" element={<DanceEditor />} />
-                      <Route path="ray_tracer" element={<RayTracer />} />
-                      <Route path="shaders" element={<Shaders />} />
-                      <Route path="auditory_interface" element={<AuditoryInterface />} />
-                    </Route>
-                    <Route path="music" element={<Music />} >
-                      <Route path="orb_weaver" element={<OrbWeaver />} />
-                      <Route path="voicemail" element={<Voicemail />} />
-                      <Route path="nyan_cat_remix" element={<NyanCatRemix />} />
-                      <Route path="vocaloid_simulation" element={<VocaloidSimulation />} />
-                      <Route path="sync_or_sink" element={<SyncOrSink />} />
-                    </Route>   
+                    <Route path="orb_weaver" element={<OrbWeaver />} />
+                    <Route path="music_editor" element={<MusicEditor />} />
+                    <Route path="dance_editor" element={<DanceEditor />} />
+                    <Route path="ray_tracer" element={<RayTracer />} />
+                    <Route path="sync_or_sink" element={<SyncOrSink />} />
+                    <Route path="auditory_interface" element={<AuditoryInterface />} />
+                    <Route path="shaders" element={<Shaders />} />
+                    <Route path="vocaloid_simulation" element={<VocaloidSimulation />} />
+                    <Route path="voicemail" element={<Voicemail />} />
+                    <Route path="nyan_cat_remix" element={<NyanCatRemix />} />
                   </Route>
                   <Route path="contact" element={<Contact />} />
                 </Routes>

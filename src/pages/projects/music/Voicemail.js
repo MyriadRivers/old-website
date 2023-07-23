@@ -8,15 +8,15 @@ const Voicemail = () => {
       <Subtitle title={"VOICEMAIL"} subtitle={"March 2022"} />
       <br />
       <Audio src={voicemail} />
-      A short composition using edited samples taken from common phone sounds. 
+      A short composition using edited samples taken from common phone sounds.
       <br />
       <br />
-      An ultrasonic sensor and a slide potentiometer were hooked up to an arduino, 
-      which was then used to trigger the different samples on Ableton Live 11 using a custom Max For Live plugin.
-      This allowed for a live, unscripted performance that resulted in a unique composition every time. 
+      An ultrasonic sensor and a slide potentiometer were hooked up to an arduino,
+      which was then used to trigger the different samples on Ableton Live 11 using a custom Max For Live plugin that I designed.
+      This let me perform the piece live using this designed musical interface, resulting in a unique composition every time.
       <br />
       <br />
-      One such performance was recorded, of which this is an excerpt. 
+      One such performance was recorded, of which this is an excerpt.
     </div>
   )
 }

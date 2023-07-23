@@ -14,6 +14,11 @@ const Contact = () => {
       <br />
       <a href="https://www.youtube.com/@riiiver" class="fa fa-youtube" > </a>
       <a href="https://www.instagram.com/manifoldrivers/" class="fa fa-instagram" > </a>
+      <br />
+      <br />
+      Bugs link:
+      <br />
+      <a href="https://www.instagram.com/riveroptera/" class="fa fa-instagram" > </a>
     </LinksContainer>
   )
 }
