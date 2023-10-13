@@ -34,13 +34,14 @@ import Voicemail from './pages/projects/music/Voicemail';
 
 import { useState } from 'react'
 import OrbWeaver from './pages/projects/music/OrbWeaver';
+import SpotifyKaraoke from './pages/projects/code/SpotifyKaraoke';
 
 function App() {
   const rootNavItems = ["about", "projects", "contact"]
   const rootRoutes = ["/", "projects", "contact"]
-  const projectNavItems = ["orb weaver", "music editor", "dance editor", "ray tracer", "sync or sink", "auditory interface", "shaders",
+  const projectNavItems = ["spotify karaoke", "orb weaver", "music editor", "dance editor", "ray tracer", "sync or sink", "auditory interface", "shaders",
     "vocaloid simulation", "voicemail", "nyan cat - remix"]
-  const projectRoutes = ["projects/orb_weaver", "projects/music_editor", "projects/dance_editor", "projects/ray_tracer", "projects/sync_or_sink",
+  const projectRoutes = ["projects/spotify_karaoke", "projects/orb_weaver", "projects/music_editor", "projects/dance_editor", "projects/ray_tracer", "projects/sync_or_sink",
     "projects/auditory_interface", "projects/shaders", "projects/vocaloid_simulation", "projects/voicemail", "projects/nyan_cat_remix"]
 
   const [route, setRoute] = useState("/")
@@ -55,11 +56,10 @@ function App() {
           {/* <MenuBar /> */}
           <NavBarContainer>
             <NavBar items={rootNavItems} routes={rootRoutes} setRoute={setRoute} />
-            <StyledRiver backgroundColor={theme.colors.river2} />
             <StyledRiver backgroundColor={theme.colors.river} />
             {window.location.pathname.match(/^\/projects/) && <NavBar items={projectNavItems} routes={projectRoutes} setRoute={setRoute} />}
-            <StyledRiver backgroundColor={theme.colors.river2} />
-            <StyledRiver backgroundColor={theme.colors.river} />
+            {!window.location.pathname.match(/^\/projects/) && <StyledRiver backgroundColor={theme.colors.river2} />}
+            {!window.location.pathname.match(/^\/projects/) && <StyledRiver backgroundColor={theme.colors.river} />}
             {/* {window.location.pathname.match(/^\/projects\/code/) && <NavBar items={codeNavItems} routes={codeRoutes} setRoute={setRoute} />}
             {window.location.pathname.match(/^\/projects\/music/) && <NavBar items={musicNavItems} routes={musicRoutes} setRoute={setRoute} />} */}
             <StyledRiver backgroundColor={theme.colors.river2} />
@@ -72,6 +72,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<About />} />
                   <Route path="projects" element={<Projects />}>
+                    <Route path="spotify_karaoke" element={<SpotifyKaraoke />} />
                     <Route path="orb_weaver" element={<OrbWeaver />} />
                     <Route path="music_editor" element={<MusicEditor />} />
                     <Route path="dance_editor" element={<DanceEditor />} />

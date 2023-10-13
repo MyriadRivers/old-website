@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
 
     #root, html {
         height: 100%;
-        color: ${({ theme }) => theme.colors.font };
+        color: ${({ theme }) => theme.colors.font};
     }
     body {
         font-family: 'Asket Narrow';
@@ -28,18 +28,29 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
     }
     a:link {
-        color: ${({ theme }) => theme.colors.link };
+        color: ${({ theme }) => theme.colors.link};
         text-decoration: none;
         background-color: none;
     }
     a:hover {
-        color: ${({ theme }) => theme.colors.linkHover };
+        color: ${({ theme }) => theme.colors.linkHover};
     }
     a:visited {
-        color: ${({ theme }) => theme.colors.linkVisit };
+        color: ${({ theme }) => theme.colors.linkVisit};
     }
     a:visited:hover {
-        color: ${({ theme }) => theme.colors.linkHover };
+        color: ${({ theme }) => theme.colors.linkHover};
+    }
+
+    scrollbar-color: #FFFFFF40 #FFFFFF00;
+    &::-webkit-scrollbar {
+        width: 1vw;
+    }
+    &::-webkit-scrollbar-track {
+        background: ${({ theme }) => theme.colors.river};
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #FFFFFF60;
     }
 `
 export default GlobalStyles

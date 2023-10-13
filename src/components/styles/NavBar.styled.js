@@ -8,4 +8,5 @@ export const StyledNavBar = styled.div`
     text-align: right;
     gap: 10px;
     overflow: auto;
+    padding-right: 1vw;
 `

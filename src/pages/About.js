@@ -7,13 +7,13 @@ const About = () => {
             <br />
             <br />
             My name is Jason.
-            I like making stuff with art, music, and code.
+            I like making things with art, music, and code.
             <br />
             <br />
             I'm interested in user interface engineering, web development, human computer interaction, generative music, and insects.
             <br />
             <br />
-            It's a pleasure to meet you.
+            Check out my stuff!
 
         </AboutContainer>
     )
