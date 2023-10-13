@@ -1,6 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.e029ed7c.js",
+    "main.js": "/static/js/main.9fafcfc1.js",
+    "static/media/spotifyKaraokeDemo.mp4": "/static/media/spotifyKaraokeDemo.521d613a58c6e98b48bf.mp4",
     "static/media/SynchroAudioInterface_Good.mov": "/static/media/SynchroAudioInterface_Good.c015e3a20f81df073ce0.mov",
     "static/media/voicemail.wav": "/static/media/voicemail.db09813fb69d20e3d532.wav",
     "static/media/MusicEditor.mov": "/static/media/MusicEditor.9fe4578c2f33cb30cbaf.mov",
@@ -17,9 +18,9 @@
     "static/media/water.jpg": "/static/media/water.092e79d14e8d98a7b9b9.jpg",
     "static/media/auditory_interface.png": "/static/media/auditory_interface.385f8ecc0a6a1f618e71.png",
     "index.html": "/index.html",
-    "main.e029ed7c.js.map": "/static/js/main.e029ed7c.js.map"
+    "main.9fafcfc1.js.map": "/static/js/main.9fafcfc1.js.map"
   },
   "entrypoints": [
-    "static/js/main.e029ed7c.js"
+    "static/js/main.9fafcfc1.js"
   ]
 }
